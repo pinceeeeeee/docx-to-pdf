@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>DOCX to PDF</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="card">
+    <h1>Pince Konverter</h1>
+    <h2>DOCX ➜ PDF</h2>
+    <p>Konversi dokumen Word ke PDF</p>
+
+    <label class="upload">
+        <input type="file" id="docxInput" accept=".docx" onchange="showFileName()">
+        <span>📄 Pilih File DOCX</span>
+    </label>
+
+    <!-- NAMA FILE AKAN MUNCUL DI SINI -->
+    <div id="fileName"></div>
+
+    <button onclick="convertToPDF()">Convert</button>
+    <p id="status"></p>
+</div>
+
+<script src="https://unpkg.com/mammoth/mammoth.browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

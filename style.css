@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: white;
+    width: 360px;
+    padding: 30px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: 0 20px 45px rgba(0,0,0,.25);
+}
+
+.card h1 {
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.upload {
+    display: block;
+    border: 2px dashed #185a9d;
+    padding: 20px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+.upload:hover {
+    background: #eef6ff;
+}
+
+.upload input {
+    display: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #185a9d;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #134b82;
+}
+
+#status {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+#fileName {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #185a9d;
+    font-weight: 500;
+}
