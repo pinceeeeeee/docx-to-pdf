@@ -41,10 +41,11 @@ async function convertToPDF() {
         // Simpan dengan nama yang sama
         pdf.save(originalName + ".pdf");
 
-        status.innerText = "✅ Berhasil! Nama file tetap sama.";
+        status.innerText = "✅ Berhasil!";
 
     } catch (error) {
         status.innerText = "❌ Terjadi kesalahan saat konversi!";
         console.error(error);
     }
 }
+
